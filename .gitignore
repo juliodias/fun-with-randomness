@@ -10,6 +10,9 @@ test-output/
 .eclipse-pmd
 .pmd
 .ruleset
+gradlew
+gradlew.bat
+gradle/
 
 # OS generated files #
 ######################
