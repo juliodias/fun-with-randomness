@@ -1,0 +1,12 @@
+version: '3'
+services:
+  localstack:
+    image: localstack/localstack
+    ports:
+      - "8088:8088"
+      - "4567-4584:4567-4584"
+    environment:
+      - PORT_WEB_UI=8088
+      - SERVICES=ec2, s3, sqs, sns
+    volumes:
+      - "/tmp/localstack:/tmp/localstack"
